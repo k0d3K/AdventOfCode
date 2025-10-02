@@ -1,4 +1,3 @@
-
 def simulate_robots(robots, width, height, seconds):
 	final_positions = []
 	for (px, py), (vx, vy) in robots:

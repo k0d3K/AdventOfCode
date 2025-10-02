@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    part1.py                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lguerbig <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/12/13 06:25:44 by lguerbig          #+#    #+#              #
-#    Updated: 2024/12/13 07:42:38 by lguerbig         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 import numpy as np
 from math import gcd
 
@@ -60,7 +48,7 @@ def solve_claw_machines(machines):
 	return prizes_won, total_tokens
 
 machines = []
-with open("test", 'r') as file:
+with open("input", 'r') as file:
 	lines = file.readlines()
 	for i in range(0, len(lines), 4):
 		a_line = lines[i].strip()

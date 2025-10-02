@@ -75,5 +75,3 @@ while 1:
 			A += add
 			break
 	print (A)
-
-print (A)

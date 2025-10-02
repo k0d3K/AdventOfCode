@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    part2.py                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lguerbig <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/12/01 11:29:36 by lguerbig          #+#    #+#              #
-#    Updated: 2024/12/08 07:39:25 by lguerbig         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 map = []
 with open("input", 'r') as file:
 	for line in file:
@@ -44,7 +32,7 @@ for i in range(len(antinode)):
 			sum += 1
 
 with open("out", 'w') as file:
-    for row in antinode:
-        file.write("".join(row) + "\n")
+	for row in antinode:
+		file.write("".join(row) + "\n")
 
 print (sum)

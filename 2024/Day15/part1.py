@@ -1,4 +1,3 @@
-
 grid = []
 moves = []
 with open('input', 'r') as file:
@@ -32,7 +31,6 @@ def move_robot(x, dx, y, dy):
 	return x, y
 
 def make_right_move(x, y, move):
-	#print (move)
 	if move == '^':
 		x, y = move_robot(x, 0, y, -1)
 	if move == 'v':
@@ -41,8 +39,6 @@ def make_right_move(x, y, move):
 		x, y = move_robot(x, -1, y, 0)
 	if move == '>':
 		x, y = move_robot(x, 1, y, 0)
-	# for row in grid:
-	# 	print("".join(row) + "\n")
 	return x, y
 
 def boxes_coordonates(grid):
@@ -50,17 +46,12 @@ def boxes_coordonates(grid):
 	for j in range(len(grid)):
 		for i in range(len(grid[0])):
 			if grid[j][i] == 'O':
-				sum += 100 * j + i 
+				sum += 100 * j + i
 	return sum
-
 
 x, y = find_start(grid)
 for move in moves:
 	x, y = make_right_move(x ,y, move)
 res = boxes_coordonates(grid)
-
-with open("out", 'w') as file:
-	for row in grid:
-		file.write("".join(row) + "\n")
 
 print (res)

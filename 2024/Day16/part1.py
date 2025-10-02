@@ -1,13 +1,3 @@
-def parse_maze(maze):
-	start, end = None, None
-	for r, row in enumerate(maze):
-		for c, char in enumerate(row):
-			if char == 'S':
-				start = (r, c)
-			elif char == 'E':
-				end = (r, c)
-	return start, end
-
 def find_paths(maze, start, end):
 	rows, cols = len(maze), len(maze[0])
 

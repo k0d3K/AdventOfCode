@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    part1.py                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lguerbig <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/12/01 11:29:36 by lguerbig          #+#    #+#              #
-#    Updated: 2024/12/11 06:34:28 by lguerbig         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 stones = []
 with open("input", 'r') as file:
 	for line in file:
@@ -29,7 +17,7 @@ def blink(stones):
 			new_stones.append(stone * 2024)
 	return new_stones
 
-for _ in range(75):
+for _ in range(25):
 	stones = blink(stones)
 
 print (len(stones))

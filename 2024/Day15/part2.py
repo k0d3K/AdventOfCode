@@ -132,15 +132,9 @@ def boxes_coordonates(grid):
                 total += 100 * j + i
     return total
 
-# for row in grid:
-# 	print("".join(row) + "\n")
 x, y = find_start(grid)
 for move in moves:
 	x, y = make_right_move(x ,y, move)
 res = boxes_coordonates(grid)
-
-# with open("out", 'w') as file:
-# 	for row in grid:
-# 		file.write("".join(row) + "\n")
 
 print (res)
