@@ -1,5 +1,3 @@
-from functools import cache
-
 def simulate_secret_number(number):
 
 	tmp = number * 64
@@ -27,7 +25,7 @@ def generate_prices_and_changes(initial_number):
 	return prices, changes
 
 def find_best_sequence(initial_numbers):
-	sequence_to_bananas = {}  # Map sequences to total bananas
+	sequence_to_bananas = {}
 
 	for initial_number in initial_numbers:
 		prices, changes = generate_prices_and_changes(initial_number)
